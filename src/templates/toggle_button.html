@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Button</title>
+</head>
+<body>
+    <h1>Button is currently: {{ state }}</h1>
+    <form method="POST">
+        <button type="submit">
+            {% if state == "OFF" %}
+                Turn ON
+            {% else %}
+                Turn OFF
+            {% endif %}
+        </button>
+    </form>
+</body>
+</html>
